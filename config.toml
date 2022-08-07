@@ -3,7 +3,6 @@ title        = "Vinay Kumar Blog"
 languageCode = "en-us"
 theme        = "hello-friend"
 paginate     = 10
-disqusShortname = 'comment'
 
 [params]
   # dir name of your blog content (default is `content/posts`).
