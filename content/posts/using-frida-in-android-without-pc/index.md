@@ -65,3 +65,5 @@ now run frida-server listening on localhost as root user
 ./frida-server -l 127.0.0.1:1234
 ```
 now open another tab and use frida cli tools we installed previously
+For more information on Frida usage visit [here](https://frida.re/docs/quickstart/)
+
