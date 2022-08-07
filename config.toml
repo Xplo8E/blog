@@ -1,28 +1,30 @@
 baseurl      = "/"
 title        = "Vinay Kumar Blog"
 languageCode = "en-us"
-theme        = "hello-friend-ng"
+theme        = "hello-friend"
 paginate     = 10
 
 [params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
+  # dir name of your blog content (default is `content/posts`).
+  # the list of set content will show up on your index page (baseurl).
+  contentTypeName = "posts"
 
-  # Subtitle for home
-  homeSubtitle = "Eat Sleep Hack #####"
+  # OS theme is default when not provided, but you can force it to "light" or "dark"
+  defaultTheme = "dark"
 
-  # Set disableReadOtherPosts to true in order to hide the links to other posts.
-  disableReadOtherPosts = false
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 2
 
-  # Enable sharing buttons, if you like
-  enableSharingButtons = true
+  # Show reading time in minutes for posts
+  showReadingTime = true
 
-  # Metadata mostly used in document's head
-  description = "My new homepage or blog"
-  keywords = "homepage, blog"
-  images = [""]
+  # Show table of contents at the top of your posts (defaults to false)
+  # Alternatively, add this param to post front matter for specific posts
+  # toc = true
+
+  # Show full page content in RSS feed items
+  #(default is Description or Summary metadata in the front matter)
+  # rssFullText = true
 
   [[params.social]]
      name = "twitter"
@@ -42,10 +44,20 @@ paginate     = 10
 [languages]
   [languages.en]
     title = "Vinay Kumar"
-    subtitle = "Wannabe Hacker"
-    keywords = ""
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    subtitle = "Eat Sleep Hack #####"
+    keywords = "security,bugbounty,android,hacking,pentesting"
+    copyright = ""
+    menuMore = "Show more"
+    writtenBy = "Written by Vinay Kumar"
+    readMore = "Read more"
     readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    minuteReadingTime = "min read"
+    dateFormatSingle = "2006-01-02"
+    dateFormatList = "2006-01-02"
+    # leave empty to disable, enter display text to enable
+    # lastModDisplay = ""
 
     [languages.en.params.logo]
       logoText = "Vinay Kumar"
@@ -54,6 +66,15 @@ paginate     = 10
     #
     # path = "/img/your-example-logo.svg"
     # alt = "Your example logo alt text"
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+      [[languages.en.menu.main]]
+        identifier = "showcase"
+        name = "Showcase"
+        url = "/showcase"
 
   # And you can even create generic menu
   [[menu.main]]
