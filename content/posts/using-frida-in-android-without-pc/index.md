@@ -10,7 +10,7 @@ tags:
   - android
   - security
 GHissueID: 2
-cover: "./logotype.png"
+cover: ""
 useRelativeCover: false
 ---
 
