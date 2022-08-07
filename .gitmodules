@@ -7,4 +7,5 @@
 	branch = main
 [submodule "themes/hello-friend"]
 	path = themes/hello-friend
-	url = https://github.com/panr/hugo-theme-hello-friend.git
+    url = https://github.com/panr/hugo-theme-hello-friend.git
+    ignore = dirty
