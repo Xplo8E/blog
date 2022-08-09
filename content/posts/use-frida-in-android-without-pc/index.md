@@ -2,17 +2,17 @@
 title: "Use Frida in Rooted Android Without PC/laptop"
 date: 2022-08-07T07:01:11Z
 draft: false
-toc: false
-images: 
 tags:
   - frida
   - termux
   - android
   - security
 GHissueID: 2
-cover: ""
-useRelativeCover: false
+# author: ""
+cover: "img/logotype.png"
+description: "In this tuorial we will see how to use Frida gadget on rooted android device without pc/laptop"
 ---
+
 
 In this tuorial we will see how to use Frida gadget on rooted android device without pc/laptop
 
@@ -24,12 +24,14 @@ it’s a dynamic code instrumentation toolkit. It lets you inject snippets of Ja
 ## Usage
 Typically pc/laptop is used to interact with android apps via adb. Now we can use only rooted device and do interact with applications in that mobile.
 
+## Setup
+
 ### Prerequisites: 
     1. Rooted Device
     2. Termux with python pre-installed
     3. Common sense
 
-## Instructions 
+### Instructions 
 First of all install Frida with pip, for other ways [click here](https://github.com/frida/frida/#two-ways-to-install)
 ```
 pip install frida-tools

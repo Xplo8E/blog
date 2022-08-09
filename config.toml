@@ -21,7 +21,7 @@ paginate     = 10
   lastModDisplay = "Last Modified:"
   # Show table of contents at the top of your posts (defaults to false)
   # Alternatively, add this param to post front matter for specific posts
-  # toc = true
+   toc = true
 
   # Show full page content in RSS feed items
   #(default is Description or Summary metadata in the front matter)
@@ -50,7 +50,7 @@ paginate     = 10
     copyright = ""
     menuMore = "Show more"
     writtenBy = "Written by Vinay Kumar"
-    readMore = "Read more"
+  #  readMore = "Read more"
     readOtherPosts = "Read other posts"
     newerPosts = "Newer posts"
     olderPosts = "Older posts"
@@ -83,3 +83,12 @@ paginate     = 10
     name       = "Blog"
     url        = "/posts"
 
+[footer]
+  [[footer.copyright]]
+    notice = '© {year} Vinay Kumar. This work is licensed under {license}'
+    [[license]]
+      enable = true
+      allow_derivatives = false
+      allow_commercial = false
+  # For multilingual sites, show a language chooser in the footer?
+  show_translations = true
