@@ -1,4 +1,4 @@
-baseURL = "https://linuxinet.github.io"
+baseURL = "http://linuxinet.github.io/"
 title = "Vinay Kumar"
 themesDir = "themes"
 theme = "m10c"
