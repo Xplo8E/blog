@@ -1,0 +1,76 @@
+baseURL = "https://linuxinet.github.io"
+title = "Vinay Kumar"
+themesDir = "themes"
+theme = "m10c"
+paginate = 8
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[permalinks]
+  posts = "/:year/:month/:day/:slug/"
+
+[params]
+  author = "Vinay Kumar"
+  description = "Geek"
+  menu_item_separator = " / "
+  avatar = "logo.png"
+  search = true
+  search_minify = false
+  [[params.social]]
+    icon = "github"
+    name = "Github"
+    url = "https://github.com/Linuxinet"
+  [[params.social]]
+    icon = "twitter"
+    name = "Twitter"
+    url = "https://twitter.com/R007_BR34K3R"
+  [[params.social]]
+    icon = "linkedin"
+    name = "Linkedin"
+    url = "https://www.linkedin.com/in/vinay-kumar-rasala-b79b331a7"
+
+#[outputs]
+#  home = ["HTML", "RSS", "JSON"]
+
+#[module]
+#  [[module.imports]]
+#    path = "github.com/kaushalmodi/hugo-search-fuse-js"
+
+  # Default theme
+  #[params.style]
+  #  darkestColor = "#242930"
+  #  darkColor = "#353b43"
+  #  lightColor = "#afbac4"
+  #  lightestColor = "#ffffff"
+  #  primaryColor = "#57cc8a"
+
+  # Green theme
+  #[params.style]
+  #  darkestColor = "#315659"
+  #  darkColor = "#253031"
+  #  lightColor = "#96a879"
+  #  lightestColor = "#fff"
+  #  primaryColor = "#dad865"
+
+  # Red theme
+  #[params.style]
+  #  darkestColor = "#d35050"
+  #  darkColor = "#212121"
+  #  lightColor = "#d6d6d6"
+  #  lightestColor = "#d3d3d3"
+  #  primaryColor = "#ffffff"
