@@ -33,19 +33,19 @@ Typically pc/laptop is used to interact with android apps via adb. Now we can us
 
 ### Instructions 
 First of all install Frida with pip, for other ways [click here](https://github.com/frida/frida/#two-ways-to-install)
-```
+```yaml
 pip install frida-tools
 ```
 Now download latest Frida-server android binary from the frida github [Link](https://github.com/frida/frida/releases/).
-```
+```yaml
 wget https://github.com/frida/frida/releases/download/15.2.2/frida-server-15.2.2-android-arm64.xz
 ```
 extract the file
-```
+```yaml
 xz -d frida-server-15.2.2-android-arm64.xz
 ```
 now move that binary file to `/data/local/tmp/` folder by using termux or any root file explorer.
-```
+```yaml
 sudo mv frida-server-15.2.2-android-arm64 /data/local/tmp/frida-server
 ```
 > here i used sudo to move the file to `/data/local/tmp`.
@@ -53,20 +53,20 @@ sudo mv frida-server-15.2.2-android-arm64 /data/local/tmp/frida-server
 > `pkg install tsu`
 
 now change to root user in termux 
-```
+```yaml
 su
 ```
 change to the **Frida-server** binary location i.e, `/data/local/tmp/frida-server`
-```
+```yaml
 cd /data/local/tmp/
 ```
 give permission to that binary
-```
+```yaml
 chmod 777 frida-server
 ```
 ![image](images/root-su-data-local.png)
 now run frida-server listening on localhost as root user 
-```
+```yaml
 ./frida-server -l 127.0.0.1:1234
 ```
 now open another tab and use frida cli tools we installed previously
